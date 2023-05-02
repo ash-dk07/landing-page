@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DK||KICKS</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-weight: bolder
+        }
+        .items{
+            background: linear-gradient(200deg,rgb(255, 77, 0),#9a1d1d);
+            border: 5px solid rgb(255 255 255);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        body
+        {
+  width: 100%;
+  background:url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=28e2a308dde6846abfed2dcafd90d7ef")  no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+    
+    
+	
+        }
+        .items:hover{
+            background:linear-gradient(100deg,white,rgb(244, 194, 194));
+           
+           
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        p {
+            color: #faf6f6;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            background: linear-gradient(200deg,rgb(255, 77, 0),rgb(255, 0, 0));
+
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .col-2 {
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+
+        .col-2 img {
+            max-width: 100%;
+            padding: 50px 0;
+        }
+
+        .col-2 h1 {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color:#ff523b;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+
+        }
+
+        .header {
+            background:linear-gradient(200deg,RED,rgb(255, 109, 46));
+        }
+
+        .header .row {
+            margin-top: 70px;
+        }
+
+        .btn:hover {
+            background: #000000;
+            transform: scale(1.1);
+        }
+
+        .cateogries {
+            margin: 70px 0;
+        }
+
+        .col-3 {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .col-3 img {
+            width: 100%;
+        }
+
+        .small-container {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+            background: linear-gradient(200deg,rgb(255, 77, 0),RED);
+        }
+
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+
+        .col-4 img {
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #000000;
+        }
+
+        .title::after {
+            content: '';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+
+        }
+
+        h4 {
+            color: #000000;
+            font-weight: normal;
+        }
+
+        .col-4 p {
+            font-size: 14px;
+        }
+
+        .rating .fa {
+            color: #ff523b;
+            background-color: #ff523b;
+        }
+
+        .col-4:hover {
+            transform: translateY(-5px);
+        }
+
+        .offer {
+            
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+
+        .col-2 .offer-img {
+            padding: 50px;
+
+        }
+
+        small {
+            color: #ffffff;
+        }
+
+        .testimonial {
+            padding-top: 100px;
+
+        }
+
+        .testimonial .col-3 {
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        .testimonial .col-3 img {
+            width: 50px;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+
+        .testimonial .col-3:hover {
+            transform: translateY(-10px);
+        }
+
+        /* .fa.fa-quote-left{
+        font-size: 34px;
+        background-color: #ff523b;
+       } */
+        .col-3 p {
+            font-size: 12px;
+            margin: 12px 0;
+            color: #000000;
+
+        }
+
+        .testimonial .col-3 h3 {
+            font-weight: 600;
+            color: #000000;
+            font-size: 16px;
+
+        }
+
+        .brands {
+            margin: 100px auto;
+
+        }
+
+        .col-5 {
+            width: 160px;
+
+        }
+
+        .col-5 img {
+            width: 100%;
+            cursor: pointer;
+            filter: grayscale(100%);
+        }
+
+        .col-5 img:hover {
+            filter: grayscale(0);
+        }
+        .footer{
+            background: linear-gradient(200deg,rgb(255, 77, 0),RED);
+            color: #000000;
+            font-size: 14px;
+            padding:60px 0 20px ;
+        }
+        .footer p{
+            color: #000000;
+        }
+        .footer h3{
+            color: #fff;
+        }
+        .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .footer-col-1{
+            flex-basis: 30%;
+        }
+        .footer-col-2{
+            flex: 1;
+            text-align: center;
+        }
+        .footer-col-2 img{
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        .footer-col-3, .footer-col-4{
+            flex-basis: 12%;
+            text-align: center;
+        }
+        ul{
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .app-logo{
+            margin-top: 20px;
+        }
+        .app-logo:hover{
+            transform: scale(360deg);
+        }
+        .app-logo img{
+            width: 140px;
+        }
+        .app-logo img:hover{
+            transition: scale(360deg);
+        }
+        .footer hr{
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0;
+        }
+        .copyright{
+            text-align: center;
+        }
+        .menu-icon{
+            width: 28px;
+            margin-left: 20px;
+            display: none;
+        }
+        
+
+        @media only screen and (max-width:800px){
+            nav ul{
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: #333;
+                width: 100%;
+                overflow: hidden;
+                transition:max-height 0.5s ;
+            }
+            nav ul li{
+                display: block;
+                margin-right: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a{
+                color:#fff ;
+            }
+            .menu-icon{
+                display: block;
+                cursor: pointer;
+            }
+        }
+        
+        @media only Screen and (max-width:600px){
+            .row{
+                text-align: center;
+            }
+            .col-2, .col-3, .col-4{
+                flex-basis: 100%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="125px">
+                    <p>DK||KICKS</p>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li class="items"><a href='#'>Home</a></li>
+                        <li class="items"><a href='product1.html'>Products</a></li>
+                        <li class="items"><a href=''>About</a></li>
+                        <li class="items"><a href=''>Contact</a></li>
+                        <li class="items"><a href=''>Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+                <img src="menu.png" width="30px" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout<br> A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about
+                        consistency. Consistent hard work gains success. Greatness
+                        will come.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="https://i.insider.com/5cca03b0021b4c26a527c8f6?width=750&format=jpeg&auto=webp">
+                </div>
+
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+               <a href="productdetails.html"> <img src="https://static.nike.com/a/images/t_prod_ls/w_1920,c_limit,f_auto/eaa42dac-16bb-4174-accd-2bbd06cee899/air-jordan-1-university-blue-release-date.jpg"></a>
+                <h4>Air Jordan 1
+                    University Blue</h4>
+                <div class="rating">
+                    
+                </div>
+                <p>₹ 13 995.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/61A1ZGiKg6L._UL1500_.jpg">
+                <h4>adidas Yeezy Foam Runner</h4>
+                <div class="rating">
+                    
+                </div>
+                <p>₹ 61 995.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="data:image/jpeg;base64,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">
+                <h4>	
+                    Jordan
+x Travis Scott x Fragment Air Jordan 1 Low OG SP</h4>
+                <div class="rating">
+                    
+                </div>
+                <p>₹2 22 193.01</p>
+
+            </div>
+            <div class="col-4">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFhUYFhgYGBgcGhUZFRwjGRgYHBUcGhgYGhgcIS4lIR4rHxwYJjgmKy8xNTU3ISQ7QDs0Py40NTQBDAwMDw8PEA8RGDEdGB0xMTExNDExPzE/MTExMTExMTExMTQxNDExMTExMTExMTE0NDExMTExMTExMTExMTExMf/AABEIAL4BCgMBIgACEQEDEQH/xAAcAAEAAAcBAAAAAAAAAAAAAAAAAQMEBQYHCAL/xABMEAACAQICBgUHCAcGBAcAAAABAgADEQQhBQYSMUFRBxMiYXEyQlKBkaGxFGJykqLB0dIXI1SCk7LwFlNzlMLxJDNDRBU0g8PT4eL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwDc0REBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQIEzFtA62LiDUNkCJUZEZH2mKgkK7rbshhYiY70sa2dUnyOkf1jgGqfRpkHsXByZuPzfpCa10Jia9EDGIpVVfZttkCqt7OoPHu35i+8QOkqdRWF1II5gyZNT0NKNhMLUxtKqKpqvRe7A7LqWWmVK71OySNkHskDlaZ/q3pxMZQWugKg3BVt6spsRfiL7j8DlAvMREBERAREQEREBERAREQEREBERAREQEREBESXUcKCSQAASSTYADeSYEyJrLAdLdJqhD4d0S+TBwzW5slgPYx7rzPdFaVoYlOsoVVqLx2Tmp5MpzU9xAMC4REQEREBLTrFpdMJh6mIfcgyXizHJUHibDu38JdprPpurkYWggvZq1zbjs02sD3dq/qga10ThX0jjrVXN3LVKr8dgEXC8rkqo5XHK02BrZiMClAYeqECqAEpqO2thZWUDNSPSyG+au0HVxCVbYbaNaopQCmt2ILKSBy8kXPDflvme4HUOlQQ4nSdYgbzRVjmc8nqDtOxyyXjxMqNeDFNsGkKtQ09ra2L2G/JmUErtffNq6ra+YVEShsththVVdo7SHuNQceZYAXO+YHrFrCcQRSoItDDpklFAADbzntvPd8TLEiE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">
+                <h4>	
+                    Nike Dunk Low Retro White Black Panda</h4>
+                <div class="rating">
+                   
+                </div>
+                <p>₹12,326 </p>
+
+            </div>
+
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="data:image/jpeg;base64,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">
+                <h4>Adidas Originals Superstar White Sneakers</h4>
+                <div class="rating">
+                    
+                </div>
+                <p> ₹8,999.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="https://hypefly-assets.s3.ap-south-1.amazonaws.com/media/products/desktop_full_size/1035-desktop_full_size.webp">
+                <h4>Air Jordan 1 Low Wolf Grey</h4>
+                <div class="rating">
+                    
+                </div>
+                <p>₹27,499.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="https://hypefly-assets.s3.ap-south-1.amazonaws.com/media/products/desktop_full_size/39-desktop_full_size.webp">
+                <h4>Nike Dunk Low Retro 'Arizona State Sun Devils'</h4>
+                <div class="rating">
+                </div>
+                <p>₹17,999.00</p>
+
+            </div>
+            <div class="col-4">
+                <img src="https://www.converseinindias.com/images/large/converseinindia/Converse_Run_Star_Motion_Platform_High_T-CV-216ZBV_ZOOM.jpg">
+                <h4>Converse Run Star </h4>
+                <div class="rating">
+                    
+                </div>
+                <p>₹5,432</p>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcStPk-8hAf5s1iU070PRnlABriq02zizv4wqu4CVCW7x8R8VxXzB-IZsots0lQyu6TvQtleuR2wEHrDBDlYM6jq4hqdlLxWjx2BIkIybl87tuoa9G8W5WbZTA&usqp=CAE" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available On DK||KICKS</p>
+                    <h1>Jordan - x Dior Air Jordan 1 Retro High</h1>
+                    <small>One of the most highly anticipated launches of the year. The Dior x Air Jordan 1 High sneakers are the first collaboration between the luxury powerhouse and sneaker giant. Crafted from wolf grey and sail white leather, these Air Jordan 1 High sneakers take on the iconic high-top silhouette, and update it by way of a grey Dior monogram swoosh logo. The perfect balance between classic and high-style. 
+                    </small>
+                    <a href="" class="btn">Buy Now &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="https://pngimg.com/uploads/nike/nike_PNG18.png">
+                </div>
+                <div class="col-5">
+                    <img src="https://pngimg.com/uploads/adidas/adidas_PNG6.png">
+                </div>
+                <div class="col-5">
+                    <img src="https://pngimg.com/uploads/converse/converse_PNG31.png">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png">
+                    <p>Our Purpose Is To Sustaniably Make the pleasure and
+                        benefits of Kicks accessible to be many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Ashish Dikonda</p>
+        </div>
+    </div>
+
+
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight='0px';
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight=='0px'){
+                MenuItems.style.maxHeight='200px';
+            }
+            else{
+                MenuItems.style.maxHeight='0px';
+            }
+
+        }
+        
+        
+
+    </script>
+</body>
+
+</html>
